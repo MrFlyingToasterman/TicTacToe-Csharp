@@ -7,10 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace TicTacToe
-{
-    public partial class Form1 : Form
-    {
+namespace TicTacToe {
+
+    public partial class Form1 : Form {
         //Startplayer Variable, accessable from every other needed method
         public int startplayer;
         //Player
@@ -22,13 +21,11 @@ namespace TicTacToe
             {"", "", ""} 
         };
 
-        public Form1()
-        {
+        public Form1() {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load(object sender, EventArgs e) {
             //Start message
             MessageBox.Show("Choose your Player Number\nThe Computer choose a random beginner");
 
@@ -43,8 +40,7 @@ namespace TicTacToe
             this.label2.Text = "" + startplayer;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+        private void button1_Click(object sender, EventArgs e) {
             //Check if button was clicked before
             if (checkarray(0, 0) == 0)
             {
@@ -58,11 +54,9 @@ namespace TicTacToe
             add2array(0, 0);
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
+        private void button2_Click(object sender, EventArgs e) {
             //Check if button was clicked before
-            if (checkarray(0, 1) == 0)
-            {
+            if (checkarray(0, 1) == 0) {
                 return;
             }
 
@@ -73,11 +67,9 @@ namespace TicTacToe
             add2array(0, 1);
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
+        private void button3_Click(object sender, EventArgs e) {
             //Check if button was clicked before
-            if (checkarray(0, 2) == 0)
-            {
+            if (checkarray(0, 2) == 0) {
                 return;
             }
 
@@ -88,11 +80,9 @@ namespace TicTacToe
             add2array(0, 2);
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
+        private void button4_Click(object sender, EventArgs e) {
             //Check if button was clicked before
-            if (checkarray(1, 0) == 0)
-            {
+            if (checkarray(1, 0) == 0) {
                 return;
             }
 
@@ -103,11 +93,9 @@ namespace TicTacToe
             add2array(1, 0);
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
+        private void button5_Click(object sender, EventArgs e) {
             //Check if button was clicked before
-            if (checkarray(1, 1) == 0)
-            {
+            if (checkarray(1, 1) == 0) {
                 return;
             }
 
@@ -118,11 +106,9 @@ namespace TicTacToe
             add2array(1, 1);
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
+        private void button6_Click(object sender, EventArgs e) {
             //Check if button was clicked before
-            if (checkarray(1, 2) == 0)
-            {
+            if (checkarray(1, 2) == 0) {
                 return;
             }
 
@@ -133,11 +119,9 @@ namespace TicTacToe
             add2array(1, 2);
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
+        private void button7_Click(object sender, EventArgs e) {
             //Check if button was clicked before
-            if (checkarray(2, 0) == 0)
-            {
+            if (checkarray(2, 0) == 0) {
                 return;
             }
 
@@ -148,11 +132,9 @@ namespace TicTacToe
             add2array(2, 0);
         }
 
-        private void button8_Click(object sender, EventArgs e)
-        {
+        private void button8_Click(object sender, EventArgs e) {
             //Check if button was clicked before
-            if (checkarray(2, 1) == 0)
-            {
+            if (checkarray(2, 1) == 0) {
                 return;
             }
 
@@ -163,11 +145,9 @@ namespace TicTacToe
             add2array(2, 1);
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
+        private void button9_Click(object sender, EventArgs e) {
             //Check if button was clicked before
-            if (checkarray(2,2) == 0)
-            {
+            if (checkarray(2,2) == 0) {
                 return;
             }
 
@@ -178,35 +158,28 @@ namespace TicTacToe
             add2array(2, 2);
         }
 
-        public int checkarray(int y, int x)
-        {
+        public int checkarray(int y, int x) {
             //Check if button was allready clicked
-            if (data[y, x] != "")
-            {
+            if (data[y, x] != "") {
                 return 0;
             }
-            else
-            {
+            else {
                 return 1;
             }
         }
 
 
-        public String checkplayer()
-        {
+        public String checkplayer() {
             //This method checks the playerstate and returns an X or O
-            if (player == 1)
-            {
+            if (player == 1) {
                 return "X";
             }
-            else
-            {
+            else {
                 return "O";
             }
         }
 
-        public void add2array(int y, int x)
-        {
+        public void add2array(int y, int x) {
             //save the input to the global dataArray
             data[y,x] = "" + player;
 
@@ -217,36 +190,29 @@ namespace TicTacToe
             checkwin();
         }
 
-        public void checkwin()
-        {
+        public void checkwin() {
             //Check the dataArray
-            if (data[0, 0] == "1" && data[0, 1] == "1" && data[0, 2] == "1" || data[0, 0] == "2" && data[0, 1] == "2" && data[0, 2] == "2")
-            {
+            if (data[0, 0] == "1" && data[0, 1] == "1" && data[0, 2] == "1" || data[0, 0] == "2" && data[0, 1] == "2" && data[0, 2] == "2") {
                 MessageBox.Show("Player " + player + " won!");
                 return;
             }
-            if (data[1, 0] == "1" && data[1, 1] == "1" && data[1, 2] == "1" || data[1, 0] == "2" && data[1, 1] == "2" && data[1, 2] == "2")
-            {
+            if (data[1, 0] == "1" && data[1, 1] == "1" && data[1, 2] == "1" || data[1, 0] == "2" && data[1, 1] == "2" && data[1, 2] == "2") {
                 MessageBox.Show("Player " + player + " won!");
                 return;
             }
-            if (data[0, 2] == "1" && data[1, 1] == "1" && data[2, 0] == "1" || data[0, 2] == "2" && data[1, 1] == "2" && data[2, 0] == "2")
-            {
+            if (data[0, 2] == "1" && data[1, 1] == "1" && data[2, 0] == "1" || data[0, 2] == "2" && data[1, 1] == "2" && data[2, 0] == "2") {
                 MessageBox.Show("Player " + player + " won!");
                 return;
             }
-            if (data[2, 0] == "1" && data[2, 1] == "1" && data[2, 2] == "1" || data[2, 0] == "2" && data[2, 1] == "2" && data[2, 2] == "2")
-            {
+            if (data[2, 0] == "1" && data[2, 1] == "1" && data[2, 2] == "1" || data[2, 0] == "2" && data[2, 1] == "2" && data[2, 2] == "2") {
                 MessageBox.Show("Player " + player + " won!");
                 return;
             }
-            if (data[0, 0] == "1" && data[1, 1] == "1" && data[2, 2] == "1" || data[0, 0] == "2" && data[1, 1] == "2" && data[2, 2] == "2")
-            {
+            if (data[0, 0] == "1" && data[1, 1] == "1" && data[2, 2] == "1" || data[0, 0] == "2" && data[1, 1] == "2" && data[2, 2] == "2") {
                 MessageBox.Show("Player " + player + " won!");
                 return;
             }
-            if (data[0, 0] == "1" && data[1, 0] == "1" && data[2, 0] == "1" || data[0, 0] == "2" && data[1, 0] == "2" && data[2, 0] == "2")
-            {
+            if (data[0, 0] == "1" && data[1, 0] == "1" && data[2, 0] == "1" || data[0, 0] == "2" && data[1, 0] == "2" && data[2, 0] == "2") {
                 MessageBox.Show("Player " + player + " won!");
                 return;
             }
@@ -255,8 +221,7 @@ namespace TicTacToe
                 MessageBox.Show("Player " + player + " won!");
                 return;
             }
-            if (data[0, 2] == "1" && data[1, 2] == "1" && data[2, 2] == "1" || data[0, 2] == "2" && data[1, 2] == "2" && data[2, 2] == "2")
-            {
+            if (data[0, 2] == "1" && data[1, 2] == "1" && data[2, 2] == "1" || data[0, 2] == "2" && data[1, 2] == "2" && data[2, 2] == "2") {
                 MessageBox.Show("Player " + player + " won!");
                 return;
             }
@@ -265,15 +230,12 @@ namespace TicTacToe
             switchplayer();
         }
 
-        public void switchplayer()
-        {
+        public void switchplayer() {
             //switch player
-            if (player == 1)
-            {
+            if (player == 1) {
                 player = 2;
             }
-            else
-            {
+            else {
                 player = 1;
             }
 
@@ -281,14 +243,22 @@ namespace TicTacToe
             label2.Text = "" + player;
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
+        private void label3_Click(object sender, EventArgs e) {
+            //Print Log Value
+            String log = "Eventlog: \n\n";
+            for (int i = 0; i < 3 ; i++) {
+                log = log + "\t";
+                for (int ii2 = 0; ii2 < 3; ii2++) {
+                    log = log + data[i, ii2] + " ";
+                }
+                log = log + "\n";
+            }
+            MessageBox.Show(log);
+
             //Restart
             int i2 = 0;
-            do
-            {
-                for (int i = 0; i < 3; i++)
-                {
+            do {
+                for (int i = 0; i < 3; i++) {
                     data[i2, i] = "";
                 }
                 i2++;

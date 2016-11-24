@@ -7,3 +7,12 @@ C:\Users\neo\documents\visual studio 2010\Projects\TicTacToe\TicTacToe\obj\x86\D
 C:\Users\neo\documents\visual studio 2010\Projects\TicTacToe\TicTacToe\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\neo\documents\visual studio 2010\Projects\TicTacToe\TicTacToe\obj\x86\Debug\TicTacToe.exe
 C:\Users\neo\documents\visual studio 2010\Projects\TicTacToe\TicTacToe\obj\x86\Debug\TicTacToe.pdb
+H:\TicTacToe-Csharp\TicTacToe\bin\Debug\TicTacToe.exe
+H:\TicTacToe-Csharp\TicTacToe\bin\Debug\TicTacToe.pdb
+H:\TicTacToe-Csharp\TicTacToe\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\TicTacToe-Csharp\TicTacToe\obj\x86\Debug\TicTacToe.Form1.resources
+H:\TicTacToe-Csharp\TicTacToe\obj\x86\Debug\TicTacToe.Properties.Resources.resources
+H:\TicTacToe-Csharp\TicTacToe\obj\x86\Debug\GenerateResource.read.1.tlog
+H:\TicTacToe-Csharp\TicTacToe\obj\x86\Debug\GenerateResource.write.1.tlog
+H:\TicTacToe-Csharp\TicTacToe\obj\x86\Debug\TicTacToe.exe
+H:\TicTacToe-Csharp\TicTacToe\obj\x86\Debug\TicTacToe.pdb

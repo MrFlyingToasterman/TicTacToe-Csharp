@@ -7,3 +7,5 @@ C:\Users\neo\documents\visual studio 2010\Projects\TicTacToe\TicTacToe\obj\x86\R
 C:\Users\neo\documents\visual studio 2010\Projects\TicTacToe\TicTacToe\obj\x86\Release\GenerateResource.write.1.tlog
 C:\Users\neo\documents\visual studio 2010\Projects\TicTacToe\TicTacToe\obj\x86\Release\TicTacToe.exe
 C:\Users\neo\documents\visual studio 2010\Projects\TicTacToe\TicTacToe\obj\x86\Release\TicTacToe.pdb
+H:\TicTacToe-Csharp\TicTacToe\obj\x86\Release\TicTacToe.exe
+H:\TicTacToe-Csharp\TicTacToe\obj\x86\Release\TicTacToe.pdb
